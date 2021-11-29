@@ -1,0 +1,46 @@
+{
+    "name": "nodejs-ts-template",
+    "version": "0.1.0",
+    "description": "Simple starter template for ExpressJs and TypeScript",
+    "author": "",
+    "license": "",
+    "scripts": {
+        "start": "npm run build && node dist/index.js",
+        "dev": "ts-node -r tsconfig-paths/register src/main.ts --config ./src/config/dev.json",
+        "build": "tsc",
+        "format": "prettier --write 'src/**/*ts'",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/koa__cors": "^3.0.3",
+        "@types/koa__router": "^8.0.9",
+        "@types/node": "14.17.19",
+        "@typescript-eslint/eslint-plugin": "4.31.2",
+        "@typescript-eslint/parser": "4.31.2",
+        "eslint": "7.32.0",
+        "eslint-config-prettier": "8.3.0",
+        "eslint-plugin-import": "2.24.2",
+        "nodemon": "^2.0.13",
+        "prettier": "2.4.1",
+        "ts-node": "^10.2.1",
+        "typescript": "4.4.3"
+    },
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "@koa/router": "^10.1.1",
+        "@types/koa": "^2.13.4",
+        "@types/koa-logger": "^3.1.2",
+        "@types/koa-router": "^7.4.4",
+        "commander": "^8.3.0",
+        "dotenv": "^10.0.0",
+        "koa": "^2.13.4",
+        "koa-body": "^4.2.0",
+        "koa-bodyparser": "^4.3.0",
+        "koa-helmet": "^6.1.0",
+        "koa-logger": "^3.2.1",
+        "koa-router": "^10.1.1",
+        "log4js": "^6.3.0"
+    }
+}
